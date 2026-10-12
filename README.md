@@ -12,7 +12,8 @@ This is an early implementation, not a tagged release.
 
 ## Using Enaptic
 
-Run `build/run.sh` after a native build. `--safe-theme` uses Elementary's
+Run `build/run.sh` after a native build. On this host, the desktop launcher
+and `~/.local/bin/enaptic` point to this checkout. `--safe-theme` uses Elementary's
 standard theme; the toolbar can switch between standard and system EFL themes.
 
 - Ctrl-click selects several packages. Toolbar marks apply to the selection.

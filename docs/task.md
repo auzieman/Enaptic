@@ -26,8 +26,9 @@ Final native build: 58679c21-c1eb-4db5-bd30-05012d583554; passed compilation,
 search and disposable transaction tests. Detailed evidence is in validation.md.
 Apply confirmation with the nine pending upgrades was inspected and cancelled.
 The canonical project is ~/Projects/Enaptic, with local enaptic/alpine-say
-launchers. Public source publication follows validation; no release tag/APK
-publication is part of this pass.
+launchers. Validated source was published to auzieman/Enaptic main, development and
+feature/apk-apply-and-sources (implementation commit 69b888c). No release
+tag/APK publication is part of this pass.
 No APK/Flatpak system updates were applied; pending updates are separate work.
 No repository activation or signing-key trust change is claimed from the tests.
 Future Tek styling remains a separate theme prototype.

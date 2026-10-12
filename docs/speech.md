@@ -11,7 +11,7 @@ The model uses CPU ONNX Runtime and the model-specified eSpeak phonemizer;
 it is not Alpine's unrelated mouse-configuration package named piper.
 
 `tools/australian_speech.py` supplies a small development frontend, using two
-inference threads. `alpine-say 'Your text'` plays a temporary WAV; `--output
+inference threads. `~/.local/bin/alpine-say 'Your text'` plays a temporary WAV; `--output
 file.wav` saves one. It defaults to Kirra. Other female speakers are bindi,
 marlo, matilda, tully and willow via `--voice`. The Python `synthesize` function
 is also callable. Models live under ~/.local/share/alpine-speech, with the
