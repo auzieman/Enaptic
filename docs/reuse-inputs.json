@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-12",
+  "files": [
+    {
+      "path_from_workspace": "AuziX/auzix_rethink/installer/efl/auzix-package-manager-efl.c",
+      "observed_git_head": "d85981a9dacaa4e5a5248796d6efdf3f59af3d54",
+      "sha256": "9ee38626a7f76070d07652bedfaee9fc45845fa75c5f53e4eea31baffa7f043d",
+      "status": "review candidate; not imported; license verification required before code reuse"
+    },
+    {
+      "path_from_workspace": "AlpinE/aports/eifyd-installer/eifyd.c",
+      "observed_git_head": "382a7e74ca486c925ead13262e9ffcf81b26f392",
+      "sha256": "0231f7dfc7ea1efaa97fdce7b6b55a52f96f53563c044e3d77f615b73dac3630",
+      "status": "review candidate; not imported; license verification required before code reuse"
+    },
+    {
+      "path_from_workspace": "AlpinE/aports/eifyd-installer/eifyd-install.py",
+      "observed_git_head": "382a7e74ca486c925ead13262e9ffcf81b26f392",
+      "sha256": "f60502e0fc7774372e2fed385d4694d9889acd30520ee1f0e0ae258b0bca3556",
+      "status": "review candidate; not imported; license verification required before code reuse"
+    },
+    {
+      "path_from_workspace": "AlpinE/aports/eifyd-installer/eifyd_storage.py",
+      "observed_git_head": "382a7e74ca486c925ead13262e9ffcf81b26f392",
+      "sha256": "9740729f618acb7a7359c79ab7fc40043c28afd0f772c845749be99810f99850",
+      "status": "review candidate; not imported; license verification required before code reuse"
+    },
+    {
+      "path_from_workspace": "E-projects/media-player/.agents/skills/e-visual-layout/SKILL.md",
+      "observed_git_head": "e80eb5aa25035ad16618f819669aa8afeb89bf8f",
+      "sha256": "02c1ed59a980430779b99df56e590c5aa11653517704b02ac2977f379a688593",
+      "status": "review candidate; not imported; license verification required before code reuse"
+    }
+  ]
+}
