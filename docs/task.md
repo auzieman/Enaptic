@@ -1,4 +1,21 @@
-# Current task — APK Apply, Reload and repositories
+# Current task — Flatpak browsing and provider selection
+
+User authorized the next browsing slice on October 12, 2026. Keep APK
+transactions separate; do not install/update Flatpak refs or edit remotes.
+Add Provider column and All/APK/Flatpak selection; retain scope, remote,
+architecture, kind and branch identities. Use existing cached remote metadata
+and asynchronous catalog reads. Expose partial/missing metadata honestly.
+Native edge/BKC runs 65498322-149a-4cad-9c0c-8d7cabf8bd68 and
+5294f4dd-16f2-46d1-afb3-2ac9fa5e5a1d completed. Fourteen Python tests passed.
+Cached host catalog contains 28,679 APK and 5,939 distinct Flatpak rows, with
+six Flatpak updates. Installed/remote ref-prefix normalization is regression
+tested. Provider selection/search and installed Chrome details were verified
+in the native GUI; APK actions disable for Flatpak-only selection. Installed
+Wine Gecko runtime details were also checked through the adapter. The final
+interpreted adapter explicitly filters kind during installed lookup.
+No Flatpak transactions/remotes or host upgrades were performed.
+
+# Previous task — APK Apply, Reload and repositories
 
 User scope: finish roadmap 1–3. Meta-packages and Flatpak management are deferred.
 User explicitly approved root-owned helper and Polkit policy installation after

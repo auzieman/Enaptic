@@ -4,7 +4,7 @@ Read README.md, docs/brief.md, docs/product-design.md, docs/backend-design.md
 and docs/task.md before implementation. Follow Synaptic’s recognizable layout
 and queued-change workflow using native EFL/Elementary widgets.
 
-Implement APK only. Keep backend operations and capability reporting separate
+Implement APK transactions and the user-authorized read-only Flatpak browser. Keep backend operations and capability reporting separate
 from widgets; no placeholder APT/DNF implementations. APK owns solving,
 signatures, database writes and hooks. The main GUI remains unprivileged.
 

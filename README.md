@@ -1,8 +1,8 @@
 # Enaptic
 
 A native EFL package manager for AlpinE, following Synaptic's compact layout
-and queued-change workflow. APK is the implemented backend; meta-packages and
-Flatpak support are later work.
+and queued-change workflow. APK transactions and read-only Flatpak browsing are implemented; meta-packages
+and Flatpak transactions remain later work.
 
 The current build browses installed/available packages, searches and filters,
 queues multiple package marks, previews APK's complete transaction, and offers
@@ -16,6 +16,10 @@ Run `build/run.sh` after a native build. On this host, the desktop launcher
 and `~/.local/bin/enaptic` point to this checkout. `--safe-theme` uses Elementary's
 standard theme; the toolbar can switch between standard and system EFL themes.
 
+- The Provider column shows APK or Flatpak and Flatpak installation scope.
+  All/APK/Flatpak selection filters shared search and browsing. Flatpak details
+  include runtime, sandbox permissions and cached metadata; see
+  [the browsing adapter](docs/flatpak-browser.md).
 - Ctrl-click selects several packages. Toolbar marks apply to the selection.
 - Double-click toggles an install or available-upgrade mark. Removal is explicit.
 - Search uses `+` for AND, `|` for OR, parentheses and quoted literals. AND binds
@@ -59,7 +63,8 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 [Current acceptance](docs/task.md), [feature map](docs/feature-map.md),
 [backend design](docs/backend-design.md), [product design](docs/product-design.md)
 and [project skills](docs/skills.md) distinguish implementation from validation.
-Sorting, broader source discovery and additional package systems remain follow-ups.
+Sorting, broader source discovery, Flatpak transactions and additional native
+package systems remain follow-ups.
 
 ## Local speech trial
 

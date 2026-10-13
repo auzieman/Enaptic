@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only APK 3 adapter. No refresh, mutation, shell or privilege escalation."""
+"""Unprivileged package browser; APK writes go through the authenticated helper."""
 import argparse
 import json
 from pathlib import Path
@@ -46,10 +46,18 @@ def details(name):
 def clean(value):return str(value).replace('\t',' ').replace('\r',' ').replace('\n',' ')
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['catalog','details','repositories','plan','apply','reload','source','trust']);parser.add_argument('name',nargs='?');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['catalog','details','repositories','plan','apply','reload','source','trust','flatpak-details']);parser.add_argument('name',nargs='?');args=parser.parse_args()
     try:
         if args.action=='catalog':
-            for row in catalog():print('\t'.join(clean(row[key]) for key in ['name','installed','candidate','description','repository','origin','license','upgradable']))
+            import flatpak_backend
+            apk_rows=catalog()
+            for row in apk_rows:row.update(provider='APK',identity=row['name'],scope='system')
+            flatpak_rows,warnings=flatpak_backend.catalog()
+            for warning in warnings:print(warning,file=sys.stderr)
+            for row in apk_rows+flatpak_rows:print('\t'.join(clean(row[key]) for key in ['name','installed','candidate','description','repository','origin','license','upgradable','provider','identity','scope']))
+        elif args.action=='flatpak-details':
+            import flatpak_backend
+            print(flatpak_backend.details(args.name or ''))
         elif args.action=='details':print(details(args.name or ''))
         elif args.action=='plan':
             import planner

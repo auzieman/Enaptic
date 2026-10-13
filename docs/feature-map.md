@@ -9,7 +9,7 @@
 | EN-005 | Update workflow and repositories | Mark All Upgrades, preserved sources, explicit key trust; no silent release mixing | Implemented source controls and known catalog; auto-mark preference deferred |
 | EN-006 | Native APK distribution | Edge/BKC build, source/license notices, signed feed, installation/runtime evidence | Planned |
 
-| EN-007 | Flatpak browsing and search | Explicit APK/Flatpak source badges and filters, remote identity, user/system scope, separate details and transaction reviews | Planned after APK Apply and repository management |
+| EN-007 | Flatpak browsing and search | Explicit APK/Flatpak source badges and filters, remote identity, user/system scope, separate details and transaction reviews | Implemented read-only catalog/filter/details; native provider selection and installed details verified |
 
 Design-only: future package-system adapters. Deferred: Flatpak installation,
 background update service, unattended installation and download-only operation

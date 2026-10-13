@@ -8,7 +8,8 @@ installation is not selected.
 
 Target first: AlpinE, Alpine 3.24 x86_64, APK 3.0.8 observed on this host.
 Other systems are an architectural consideration, not first-release deliverables.
-Flatpak and service/channel concepts remain separate follow-ups.
+Read-only Flatpak browsing is now authorized; Flatpak transactions and
+service/channel concepts remain separate follow-ups.
 
 Keep an ordinary 12 GB i3 workstation comfortable: virtualized package rows,
 asynchronous reads, debounced search, bounded logs and no continuously animated

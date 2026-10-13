@@ -32,3 +32,16 @@ attribution and revision/hash receipt are stored locally and not in Git.
 Nine APK packages and six Flatpak components remained pending at the final
 check. No host upgrade was applied, and no Flatpak management implementation
 is claimed. This is source publication, not a tagged binary/APK release.
+
+## Flatpak browsing follow-up
+
+Native build 5294f4dd-16f2-46d1-afb3-2ac9fa5e5a1d completed; native search
+and disposable APK transaction checks still pass. Fourteen Python tests pass
+with the final interpreted Flatpak adapter. Full provider identities are distinct:
+5,939 Flatpak rows and six updates on this host, plus 28,679 APK rows.
+Installed and remote ref formats normalize before merging; scope/origin/branch
+remain distinct. Native All/APK/Flatpak selection, search and installed Chrome
+details were exercised. Installed Wine Gecko runtime details were checked
+separately after making installed lookup explicitly filter ref kind.
+Flatpak-only selections cannot mark packages through APK controls.
+No Flatpak changes, source edits or host upgrades were executed.
